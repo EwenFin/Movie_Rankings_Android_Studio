@@ -4,11 +4,14 @@ public class Movie {
 
     private String title;
     private String genre;
+    private int ranking;
 
     public Movie(String title, String genre){
-        title = new title();
-        genre = new genre();
+        this.title = title;
+        this.genre = genre;
+        this.ranking = ranking;
     }
+
 
     public String getTitle() {
         return title;
