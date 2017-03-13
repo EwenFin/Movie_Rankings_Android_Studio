@@ -1,8 +1,8 @@
-package com.codeclan.movie_ranking;
-
-
+//package com.codeclan.movie_ranking;
+//
+//
 //public class Ranking {
-
+//
 //    private int ranking;
 //
 //    public Ranking(){

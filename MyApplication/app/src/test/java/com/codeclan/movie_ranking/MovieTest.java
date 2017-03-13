@@ -2,50 +2,48 @@ package com.codeclan.movie_ranking;
 
 import org.junit.*;
 
-
-import java.util.ArrayList;
-
 import static org.junit.Assert.*;
 
 
 public class MovieTest {
 
-    ArrayList<Movie>  movieArray;
+    Movie movie1;
+    Movie movie2;
+    Movie movie3;
 
     @Before
     public void before() {
-        movieArray = new ArrayList<Movie>();
-        Movie movie1 = new Movie("The Lord of the Rings", "Fantasy");
-        Movie movie2 = new Movie("Apocalypse Now", "War");
-        Movie movie3 = new Movie("The Godfather", "Mafia");
-        movieArray.add(movie1);
-        movieArray.add(movie2);
-        movieArray.add(movie3);
+        movie1 = new Movie("The Lord of the Rings", "Fantasy");
+        movie2 = new Movie("Apocalypse Now", "War");
+        movie3 = new Movie("The Godfather", "Mafia");
+
 
 
     }
 
     @Test
     public void getTitleTest(){
-        assertEquals("The Lord of the Rings", movieArray.get(0).getTitle());
+        assertEquals("The Lord of the Rings", movie1.getTitle());
     }
 
     @Test
     public void getGenreTest(){
-        assertEquals("War", movieArray.get(1).getGenre());
+        assertEquals("War", movie2.getGenre());
     }
 
     @Test
     public void setTitleTest(){
-        movieArray.get(0).setTitle("Blade Runner");
-        assertEquals("Blade Runner", movieArray.get(0).getTitle());
+        movie3.setTitle("Blade Runner");
+        assertEquals("Blade Runner", movie3.getTitle());
     }
 
     @Test
     public void setGenreTest(){
-        movieArray.get(0).setGenre("Adventure");
-        assertEquals("Adventure", movieArray.get(0).getGenre());
+        movie1.setGenre("Adventure");
+        assertEquals("Adventure", movie1.getGenre());
     }
+
+
 
 
 
