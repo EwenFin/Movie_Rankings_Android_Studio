@@ -29,8 +29,8 @@ public class RankingTest {
     }
 
     @Test
-    public void getMovieAtIndexTest() {
-        Movie result = movieArray.getMovieAtIndex(0);
+    public void getMovieAtRankTest() {
+        Movie result = movieArray.getMovieAtRank(1);
         assertEquals("The Lord of the Rings, Fantasy, Ranking: 1", result.toString());
     }
 

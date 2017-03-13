@@ -29,8 +29,8 @@ public class Ranking {
         ranking.add(index, movie);
     }
 
-    public Movie getMovieAtIndex(int index){
-        return ranking.get(index);
+    public Movie getMovieAtRank(int index){
+        return ranking.get(index - 1);
 
     }
 
