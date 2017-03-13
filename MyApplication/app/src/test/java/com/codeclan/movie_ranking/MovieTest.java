@@ -35,5 +35,13 @@ public class MovieTest {
         assertEquals("War", movieArray.get(1).getGenre());
     }
 
+    @Test
+    public void setTitleTest(){
+        movieArray.get(0).setTitle("Blade Runner");
+        assertEquals("Blade Runner", movieArray.get(0).getTitle());
+    }
+
+    
+
 
 }
