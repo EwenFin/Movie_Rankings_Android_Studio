@@ -6,7 +6,7 @@ import java.util.ArrayList;
 
 public class RankingTest {
 
-    private Ranking movieArray;
+    public Ranking movieArray;
     Movie movie1;
     Movie movie2;
     Movie movie3;
@@ -17,9 +17,9 @@ public class RankingTest {
         movie2 = new Movie("Apocalypse Now", "War", 2);
         movie3 = new Movie("The Godfather", "Mafia", 3);
         movieArray = new Ranking();
-        movieArray.add(movie1.getRank(), movie1);
-        movieArray.add(movie3.getRank(), movie3);
-        movieArray.add(movie2.getRank(), movie2);
+        movieArray.add(0, movie1);
+        movieArray.add(1, movie3);
+        movieArray.add(2, movie2);
         }
 
     @Test
@@ -28,11 +28,17 @@ public class RankingTest {
 
     }
 
-
-
-
-
+    @Test
+    public void getMovieAtIndexTest() {
+        Movie result = movieArray.getMovieAtIndex(0);
+        assertEquals("The Lord of the Rings, Fantasy, Ranking: 1", result.toString());
     }
+
+
+
+
+
+
 
 
 

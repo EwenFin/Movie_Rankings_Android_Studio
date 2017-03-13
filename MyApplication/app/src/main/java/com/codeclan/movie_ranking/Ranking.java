@@ -12,6 +12,11 @@ public class Ranking {
 
     }
 
+    public Ranking(ArrayList<Movie> new_movies){
+        ranking = new_movies;
+    }
+
+
     public ArrayList<Movie> getRanking() {
         return new ArrayList<Movie>(ranking);
     }
@@ -24,7 +29,10 @@ public class Ranking {
         ranking.add(index, movie);
     }
 
-    public
+    public Movie getMovieAtIndex(int index){
+        return ranking.get(index);
+
+    }
 
 
 }

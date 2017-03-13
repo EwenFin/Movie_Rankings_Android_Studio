@@ -4,13 +4,13 @@ public class Movie {
 
     private String title;
     private String genre;
-    private int ranking;
+    private int rank;
 
 
-    public Movie(String title, String genre, int ranking){
+    public Movie(String title, String genre, int rank){
         this.title = title;
         this.genre = genre;
-        this.ranking = ranking;
+        this.rank = rank;
     }
 
     public String getTitle() {
@@ -30,11 +30,11 @@ public class Movie {
     }
 
     public int getRank(){
-        return ranking;
+        return rank;
     }
 
     public void setRank(int rank) {
-        this.ranking = rank;
+        this.rank = rank;
     }
 
     @Override
