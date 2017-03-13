@@ -41,7 +41,13 @@ public class MovieTest {
         assertEquals("Blade Runner", movieArray.get(0).getTitle());
     }
 
-    
+    @Test
+    public void setGenreTest(){
+        movieArray.get(0).setGenre("Adventure");
+        assertEquals("Adventure", movieArray.get(0).getGenre());
+    }
+
+
 
 
 }
