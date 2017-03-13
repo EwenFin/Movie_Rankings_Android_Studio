@@ -16,9 +16,6 @@ public class MovieTest {
         movie1 = new Movie("The Lord of the Rings", "Fantasy", 1);
         movie2 = new Movie("Apocalypse Now", "War", 2);
         movie3 = new Movie("The Godfather", "Mafia", 3);
-
-
-
     }
 
     @Test
@@ -45,13 +42,13 @@ public class MovieTest {
 
     @Test
     public void getRankTest(){
-        assertEquals(1, movie1.getRanking());
+        assertEquals(1, movie1.getRank());
     }
 
     @Test
     public void setRankTest(){
-        movie3.setRanking(1);
-        assertEquals(1, movie3.getRanking());
+        movie3.setRank(1);
+        assertEquals(1, movie3.getRank());
     }
 
     @Test

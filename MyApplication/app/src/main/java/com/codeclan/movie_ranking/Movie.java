@@ -29,17 +29,17 @@ public class Movie {
         this.genre = genre;
     }
 
-    public int getRanking(){
+    public int getRank(){
         return ranking;
     }
 
-    public void setRanking(int rank) {
+    public void setRank(int rank) {
         this.ranking = rank;
     }
 
     @Override
     public String toString(){
-        String result = getTitle() + ", " + getGenre() + ", " + "Ranking: " + getRanking();
+        String result = getTitle() + ", " + getGenre() + ", Ranking: " + getRank();
         return result;
     }
 

@@ -1,23 +1,30 @@
-//package com.codeclan.movie_ranking;
-//
-//import java.util.ArrayList;
-//
-//public class Ranking {
-//
-//    private ArrayList<Movie> movieArray;
-//
-//    public Ranking(){
-//
-//        movieArray = new ArrayList<Movie>();
-//
-//    }
-//
-//    public ArrayList<Movie> getMovieArray() {
-//        return movieArray;
-//    }
-//
-//    public void setMovieArray(ArrayList<Movie> movieArray) {
-//        this.movieArray = movieArray;
-//    }
-//}
-//}
+package com.codeclan.movie_ranking;
+
+import java.util.ArrayList;
+
+public class Ranking {
+
+    private ArrayList<Movie> ranking;
+
+    public Ranking(){
+
+        ranking = new ArrayList<Movie>();
+
+    }
+
+    public ArrayList<Movie> getRanking() {
+        return new ArrayList<Movie>(ranking);
+    }
+
+    public void setRanking(ArrayList<Movie> ranking) {
+        this.ranking = ranking;
+    }
+
+    public void add(int index, Movie movie) {
+        ranking.add(index, movie);
+    }
+
+    public
+
+
+}
