@@ -13,9 +13,9 @@ public class MovieTest {
 
     @Before
     public void before() {
-        movie1 = new Movie("The Lord of the Rings", "Fantasy");
-        movie2 = new Movie("Apocalypse Now", "War");
-        movie3 = new Movie("The Godfather", "Mafia");
+        movie1 = new Movie("The Lord of the Rings", "Fantasy", 1);
+        movie2 = new Movie("Apocalypse Now", "War", 2);
+        movie3 = new Movie("The Godfather", "Mafia", 3);
 
 
 
@@ -41,6 +41,22 @@ public class MovieTest {
     public void setGenreTest(){
         movie1.setGenre("Adventure");
         assertEquals("Adventure", movie1.getGenre());
+    }
+
+    @Test
+    public void getRankTest(){
+        assertEquals(1, movie1.getRanking());
+    }
+
+    @Test
+    public void setRankTest(){
+        movie3.setRanking(1);
+        assertEquals(1, movie3.getRanking());
+    }
+
+    @Test
+    public void toStringTest(){
+        assertEquals("The Lord of the Rings, Fantasy, Ranking: 1", movie1.toString());
     }
 
 
